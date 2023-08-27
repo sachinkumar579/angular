@@ -1,0 +1,26 @@
+<p>Current UTC Time: {{ currentTime }}</p> <!-- Display the current UTC time -->
+
+<div class="container-row">
+  <div class="container1">
+
+    <mat-button-toggle-group name="env" aria-label="Environment" [(ngModel)]="env">
+      <mat-button-toggle value="dev" (click)="handleEnvClick()">Dev</mat-button-toggle>
+      <mat-button-toggle value="qa" (click)="handleEnvClick()">QA</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+
+
+  <div class="container2">
+
+    <mat-button-toggle-group name="service" aria-label="service" [(ngModel)]="service">
+      <mat-button-toggle value="service1" (click)="handleEnvClick()">service1</mat-button-toggle>
+      <mat-button-toggle value="service2" (click)="handleEnvClick()">service2</mat-button-toggle>
+      <mat-button-toggle value="service3" (click)="handleEnvClick()">service3</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+</div>
+
+<div class="container">
+  <textarea [(ngModel)]="textValue" rows="5" cols="25"></textarea>
+  <button mat-raised-button (click)="handleClick()">Click to send</button>
+</div>
