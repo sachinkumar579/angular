@@ -8,3 +8,10 @@
     margin: 10px;
     /* Adjust as needed */
 }
+
+.mat-button-toggle-checked {
+    background-color: rgb(179, 179, 241) !important;
+   
+  }
+
+  
